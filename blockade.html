@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>#IndiaBlockadesNepal</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+		pre {
+      color:#de2416;
+      display: block; 
+      padding: 0; 
+      margin: 0; 
+      font-size: 11px;
+      line-height: inherit; 
+      background: none; 
+      border: none; 
+      border-radius: none; 
+		}
+
+    #madhesiEmoji {
+      margin-top: 210px;
+    }
+
+    #top {
+      margin-bottom: 30px;
+    }
+	</style>
+  </head>
+
+  <body>
+
+  <div class="container">
+      <div class="inner cover">
+        <div class="col-md-12" id="top">
+          <img class="img col-md-2" id="madhesiEmoji" src="img/madhesi.png" >
+          <pre class="col-md-8" id="o">This animated fire in plain ASCII art needs JavaScript to run in your web browser.</pre>
+        </div>
+        <br>
+        <h1 class="cover-heading">#IndiaBlockadesNepal</h1>
+        <p class="lead">Here is why India is Blocking Nepal.</p>
+        <!-- <p class="lead">
+          <a href="#" class="btn btn-lg btn-default">Learn more</a>
+        </p> -->
+      </div>
+    </div>
+    <script type="text/javascript">
+var size = 80 * 25;
+var b = [];
+for (i = 0; i < size + 81; i++)
+  b[i] = 0;
+var char = " .:*sS#$".split("");
+var e = document.getElementById("o").firstChild;
+
+function f()
+{
+  for (i = 0; i < 5; i++)
+    b[Math.floor(Math.random() * 80) + 80 * 24] = 70;
+  a = "";
+  for (i = 0; i < size; i++)
+  {
+    b[i] = Math.floor((b[i] + b[i + 1] + b[i + 80] + b[i + 81]) / 4);
+    a += char[b[i] > 7 ? 7 : b[i]];
+    if (i % 80 > 78)
+      a += "\r\n";
+  }
+  e.data = a;
+  setTimeout(f, 60);
+}
+f();
+</script>
+  </body>
+
+
+</html>
