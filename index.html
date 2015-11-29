@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="container main">
@@ -29,80 +31,26 @@
     <div id="details" class="container">
         
     </div>
-    <!-- <footer class="footer">
-      <div class="container">
-        <p class="text-muted">
-        All contents and links are copyright material of the respected site owners, except this one. Email us links at nepaliswadhin at gmail.com</p>
-      </div>
-    </footer> -->
 </body>
 <script type="text/javascript">
-    var newsSection = document.getElementsByClassName('news');
-    var closeDetails = document.getElementsByClassName('close');
-    var details = document.getElementById("details");
+    function loadContent(e){var t=document.createElement("div")
+t.setAttribute("class","detailCaption")
+var a=document.createElement("button")
+a.setAttribute("class","close"),a.setAttribute("aria-label","Close"),a.onclick=function(e){e.preventDefault(),e.srcElement.parentNode.parentNode.parentNode.style.visibility="hidden"}
+var n=document.createElement("span")
+n.setAttribute("aria-hidden","true"),n.innerHTML="&times;",a.appendChild(n),t.appendChild(a)
+for(var i=document.createElement("ol"),l=0;l<data[e].links.length;l++){var d=document.createElement("li")
+d.innerHTML='<a target="_blank" href="'+data[e].links[l]+'">'+data[e].links[l]+"</a>",i.appendChild(d)}t.appendChild(i),details.innerHTML="",details.appendChild(t),details.style.visibility="visible"}function createNewsProviders(){var e=document.getElementById("newsSites"),t=Object.keys(data).length
+e.innerHTML=""
+for(var a=0;t>a;a++){var n=data[Object.keys(data)[a]],i=document.createElement("div")
+i.setAttribute("class","col-md-1 news")
+var l=document.createElement("img")
+l.src="img/"+n.icon,l.setAttribute("data-toggle","tooltip"),l.setAttribute("data-placement","bottom"),l.setAttribute("data-original-title",Object.keys(data)[a]),i.appendChild(l),i.setAttribute("onclick",'loadContent("'+Object.keys(data)[a]+'")'),e.appendChild(i)}}var newsSection=document.getElementsByClassName("news"),closeDetails=document.getElementsByClassName("close"),details=document.getElementById("details")
 
-    function loadContent(source) {
-
-        var detailsCaption = document.createElement('div');
-        detailsCaption.setAttribute('class','detailCaption');
-
-        var closeBtn = document.createElement('button');
-        closeBtn.setAttribute('class','close');
-        closeBtn.setAttribute('aria-label','Close');
-        closeBtn.onclick = function(e) {
-            e.preventDefault();
-            e.srcElement.parentNode.parentNode.parentNode.style.visibility = "hidden";
-        }
-
-        var closeSpan = document.createElement('span');
-        closeSpan.setAttribute('aria-hidden','true')
-        closeSpan.innerHTML = "&times;";
-
-        closeBtn.appendChild(closeSpan);
-        detailsCaption.appendChild(closeBtn);
-
-        var ol = document.createElement('ol');
-        for(var i=0; i<data[source].links.length;i++) {
-            var li = document.createElement('li');
-            li.innerHTML = '<a target="_blank" href="' + data[source].links[i] + '">' + data[source].links[i] + '</a>';
-            ol.appendChild(li);
-        }
-
-        detailsCaption.appendChild(ol);
-        details.innerHTML = '';
-        details.appendChild(detailsCaption);
-        details.style.visibility = 'visible';
-
-    }
-
-
-    function createNewsProviders() {
-        var newsSites = document.getElementById('newsSites');
-        var dataLen = Object.keys(data).length;
-        newsSites.innerHTML = '';
-
-        for(var i=0;i<dataLen;i++) {
-            var currData = data[Object.keys(data)[i]]
-            var coverDiv = document.createElement('div');
-            coverDiv.setAttribute('class','col-md-1 news');
-
-            var iconImage = document.createElement("img");
-            iconImage.src = "img/" + currData.icon;
-
-            var captionDiv = document.createElement('div');
-            captionDiv.setAttribute('class','caption');
-            var content = document.createTextNode(Object.keys(data)[i]);
-            captionDiv.appendChild(content);
-
-            coverDiv.appendChild(iconImage);
-            coverDiv.appendChild(captionDiv);
-            // coverDiv.onclick = loadContent(Object.keys(data)[i]);
-            coverDiv.setAttribute('onclick','loadContent("' + Object.keys(data)[i] + '")');
-
-            newsSites.appendChild(coverDiv);
-        }
-    }
 
     createNewsProviders();
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 </script>
 </html>

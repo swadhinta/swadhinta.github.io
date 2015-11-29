@@ -61,7 +61,7 @@ var data = {
 		]
 	},
 	"International Affairs": {
-		"icon": "InternationalAffairs.png",
+		"icon": "internationalAffairs.png",
 		"links": [
 			"http://internationalaffairs.org.au/australian_outlook/indias-demands-grind-nepal-to-a-standstill/"
 		]
@@ -103,13 +103,13 @@ var data = {
 		]
 	},
 	"Deccan Herald": {
-		"icon":"noicon.png",
+		"icon":"deccan.jpg",
 		"links": [
 			"http://deccanherald.com/content/506646/indias-costly-policy-failure-nepal.html"
 		]
 	},
 	"The Guardian": {
-		"icon":"noicon.png",
+		"icon":"guardian.png",
 		"links": [
 			"http://theguardian.com/global-development/2015/nov/06/nepal-government-humanitarian-crisis-india-border-blockade-deputy-prime-minister-kamal-thapa"
 		]
@@ -122,13 +122,13 @@ var data = {
 		]
 	},
 	"SAAPE": {
-		"icon":"noicon.png",
+		"icon":"saape.ico",
 		"links": [
 			"http://saape.org/index.php/news-room/press-releases/58-people-s-saarc-india-congratulates-the-people-of-nepal-on-adopting-constitution-of-nepal-2072-and-condemns-modi-government-s-unofficial-blockade-of-nepal"
 		]
 	},
 	"Setopati": {
-		"icon":"noicon.png",
+		"icon":"setopati.ico",
 		"links": [
 			"http://setopati.net/opinion/9563/Why-int’l-community-isn’t-speaking-up-against-Indian-blockade/",
 			"http://setopati.net/opinion/9598/",
@@ -137,13 +137,13 @@ var data = {
 		]
 	},
 	"South Asia": {
-		"icon":"noicon.png",
+		"icon":"southasia.jpg",
 		"links": [
 			"http://www.southasia.com.au/2015/09/27/india-has-undeclared-blockade-on-everything-except-on-banana-nepal-pm-koirala/"
 		]
 	},
 	"The Quint": {
-		"icon":"noicon.png",
+		"icon":"thequint.ico",
 		"links": [
 			"http://thequint.com/opinion/2015/10/13/indias-nepal-mess-result-of-a-mix-of-arrogance-and-ineptitude#.Vh3XBhlVJK4.twitter"
 		]
@@ -155,7 +155,7 @@ var data = {
 		]
 	},
 	"Times of India": {
-		"icon":"noicon.png",
+		"icon":"toi.png",
 		"links": [
 			"http://timesofindia.indiatimes.com/india/Indian-blockade-more-inhuman-than-war-says-Nepal-PM-KP-Sharma-Oli/articleshow/49690974.cms"
 		]
