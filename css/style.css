@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5,h6 {
 .centerAlign {
   text-align: center;
   margin-bottom: 40px;
+  font-weight: 200 !important;
 }
 
 .news img {
