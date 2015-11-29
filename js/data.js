@@ -11,7 +11,14 @@ var data = {
 			"http://www.nytimes.com/1989/04/11/world/nepal-s-economy-is-gasping-as-india-a-huge-neighbor-squeezes-it-hard.html",
 			"http://www.nytimes.com/2015/10/12/world/asia/nepal-elects-kp-sharma-oli-as-new-prime-minister.html",
 			"http://nytimes.com/2015/11/07/opinion/nepal-china-india-dragon-elephant-blockade.html",
-			"http://kristof.blogs.nytimes.com/2015/10/13/india-dampens-nepals-celebrations"
+			"http://kristof.blogs.nytimes.com/2015/10/13/india-dampens-nepals-celebrations",
+			"http://www.nytimes.com/2015/09/29/world/asia/nepal-rations-fuel-as-political-crisis-with-india-worsens.html?_r=0"
+		]
+	},
+	"DW": {
+		"icon":"dw.png",
+		"links": [
+			"http://www.dw.com/en/how-protests-and-a-blockade-are-crippling-nepals-economy/a-18875093"
 		]
 	},
 	"NDTV News":{
@@ -31,7 +38,8 @@ var data = {
 		"icon":"scroll.in.png",
 		"links":[
 			"http://scroll.in/article/757547/has-modis-neighbourhood-first-model-forgotten-about-nepal",
-			"http://scroll.in/article/766324/how-indias-economic-blockade-of-nepal-may-cause-more-severe-floods-in-bihar"
+			"http://scroll.in/article/766324/how-indias-economic-blockade-of-nepal-may-cause-more-severe-floods-in-bihar",
+			"http://scroll.in/article/770827/economic-blockade-akin-to-imperial-meddling-filmmakers-hit-out-at-government-over-nepal-crisis"
 		]
 	},
 	"Nepali Times": {
@@ -49,7 +57,8 @@ var data = {
 	"BBC": {
 		"icon":"bbc.png",
 		"links": [
-			"http://bbc.com/news/world-asia-34469494"
+			"http://bbc.com/news/world-asia-34469494",
+			"http://www.bbc.com/news/world-asia-34948097"
 		]
 	},
 	"Indian Express": {
@@ -57,7 +66,8 @@ var data = {
 		"links": [
 			"http://indianexpress.com/article/explained/a-new-pm-for-nepal-power-will-trump-principles",
 			"http://indianexpress.com/article/opinion/columns/big-brothers-blockade",
-			"http://indianexpress.com/article/opinion/columns/raja-mandala-stumbling-in-the-neighbourhood"
+			"http://indianexpress.com/article/opinion/columns/raja-mandala-stumbling-in-the-neighbourhood",
+			"http://indianexpress.com/article/opinion/columns/narendra-modi-india-nepal-india-nepal-relations-nepal-congress/"
 		]
 	},
 	"International Affairs": {
@@ -87,7 +97,8 @@ var data = {
 	"First Post": {
 		"icon":"firstpost.ico",
 		"links": [
-			"http://firstpost.com/world/still-smiling-and-uncomplaining-a-glimpse-of-life-in-nepal-after-indias-unofficial-blockade-2491374.html"
+			"http://firstpost.com/world/still-smiling-and-uncomplaining-a-glimpse-of-life-in-nepal-after-indias-unofficial-blockade-2491374.html",
+			"http://www.firstpost.com/world/nepal-pm-oli-urges-india-to-lift-economic-blockade-says-its-causing-a-humanitarian-crisis-2507660.html"
 		]
 	},
 	"Business Standard": {
@@ -100,6 +111,15 @@ var data = {
 		"icon":"dailyo.ico",
 		"links": [
 			"http://dailyo.in/politics/india-nepal-ties-china-ioc-nepal-oil-corporation-tibet-narendra-modi-petroleum/story/1/7198.html"
+		]
+	},
+	"Dawn": {
+		"icon":"dawn.png",
+		"links": [
+			"http://www.dawn.com/news/1220797/nepal-facing-medicine-shortages-due-to-fuel-crisis-blockade",
+			"http://www.dawn.com/news/1217707/india-used-economic-blockade-to-dictate-nepalese-constitution",
+			"http://www.dawn.com/news/1209958/nepali-leader-says-india-breaking-international-law",
+			"http://www.dawn.com/news/1221419"
 		]
 	},
 	"Deccan Herald": {
@@ -170,6 +190,30 @@ var data = {
 		"icon":"turkeyAgenda.ico",
 		"links": [
 			"http://www.turkeyagenda.com/indian-interference-in-nepal-is-hegemonic-not-moral-2911.html"
+		]
+	},
+	"Time": {
+		"icon":"time.png",
+		"links": [
+			"http://time.com/4115801/nepal-india-border-blockade-madhesh/"
+		]
+	},
+	"Wall Street Journal": {
+		"icon":"wsj.ico",
+		"links" : [
+			"http://blogs.wsj.com/indiarealtime/2015/11/26/the-two-month-blockade-of-nepal-explained/"
+		]
+	},
+	"Washington Post": {
+		"icon":"wp.ico",
+		"links": [
+			"https://www.washingtonpost.com/news/worldviews/wp/2015/09/29/nepal-is-angry-with-india-so-it-turns-off-the-tv/"
+		]
+	},
+	"Yahoo News": {
+		"icon":"yahoo.ico",
+		"links": [
+			"http://news.yahoo.com/nepal-facing-medicine-shortages-due-fuel-crisis-blockade-093721301.html"
 		]
 	}
 
