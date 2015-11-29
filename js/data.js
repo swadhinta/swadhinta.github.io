@@ -149,7 +149,7 @@ var data = {
 		]
 	},
 	"The Statesman": {
-		"icon":"noicon.png",
+		"icon":"statesman.ico",
 		"links": [
 			"http://thestatesman.com/news/india/nepal-blockade-linked-to-bihar-votes-says-katju/101369.html"
 		]
@@ -161,21 +161,15 @@ var data = {
 		]
 	},
 	"Tribune India": {
-		"icon":"noicon.png",
+		"icon":"tribune.png",
 		"links": [
 			"http://tribuneindia.com/news/comment/how-nepal-was-lost/143371.html"
 		]
 	},
 	"Turkey Agenda": {
-		"icon":"noicon.png",
+		"icon":"turkeyAgenda.ico",
 		"links": [
 			"http://www.turkeyagenda.com/indian-interference-in-nepal-is-hegemonic-not-moral-2911.html"
-		]
-	},
-	"Zameer36": {
-		"icon":"noicon.png",
-		"links": [
-			"http://zameer36.com/what-india-loses-by-pushing-nepal-into-crisis/"
 		]
 	}
 
