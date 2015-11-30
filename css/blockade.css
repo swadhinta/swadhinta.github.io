@@ -1,0 +1,36 @@
+.topContainer {
+background: linear-gradient(to bottom,#191c42 0,#4f0d23 100%);
+height: 320px;
+width: 100%;
+}
+
+
+.navbar-transparent {
+	color: #fff;
+	background: none;
+	border: none;
+	font-weight: 100;
+}
+
+.navbar-brand {
+	color: #fff !important;
+}
+
+.mainText {
+	background: linear-gradient(to right,#00a6cc 0,#05d3a0 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 100;
+	text-align: center;
+}
+
+.inner {
+	text-align: center;
+}
+
+#topImage {
+	background: linear-gradient(to bottom,#d4c664 0,#4f0d23 100%);
+	padding:2px
+}
