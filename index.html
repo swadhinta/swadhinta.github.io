@@ -40,7 +40,7 @@ a.setAttribute("class","close"),a.setAttribute("aria-label","Close"),a.onclick=f
 var n=document.createElement("span")
 n.setAttribute("aria-hidden","true"),n.innerHTML="&times;",a.appendChild(n),t.appendChild(a)
 for(var i=document.createElement("ol"),l=0;l<data[e].links.length;l++){var d=document.createElement("li")
-d.innerHTML='<a target="_blank" href="'+data[e].links[l]+'">'+data[e].links[l]+"</a>",i.appendChild(d)}t.appendChild(i),details.innerHTML="",details.appendChild(t),details.style.visibility="visible"}function createNewsProviders(){var e=document.getElementById("newsSites"),t=Object.keys(data).length
+d.innerHTML='<a target="_blank" href="'+data[e].links[l]+'">'+data[e].title[l]+"</a>",i.appendChild(d)}t.appendChild(i),details.innerHTML="",details.appendChild(t),details.style.visibility="visible"}function createNewsProviders(){var e=document.getElementById("newsSites"),t=Object.keys(data).length
 e.innerHTML=""
 for(var a=0;t>a;a++){var n=data[Object.keys(data)[a]],i=document.createElement("div")
 i.setAttribute("class","col-md-1 news")
