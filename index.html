@@ -64,7 +64,7 @@
         }   
     }
        
-   $('#searchAnything').onkeyup=function(e) {
+   $('#searchAnything').on("keyup",function(e) {
         var v = this.value.toLowerCase();
         if(v == '') {
             $('.elem').show();
@@ -74,6 +74,6 @@
                 (txt.indexOf(v) >= 0) ? $(this).show() : $(this).hide();
             })
         }
-    }
+    });
 </script>
 </html>
