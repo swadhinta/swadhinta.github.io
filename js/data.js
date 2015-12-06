@@ -1,4 +1,13 @@
 var data = {
+	"Asian Age": {
+		"icon":"noicon.png",
+		"title": [
+			"Uneasy neighbours: A real test for Modi"
+		],
+		"links": [
+			"http://www.asianage.com/columnists/uneasy-neighbours-real-test-modi-373"
+		]
+	},
 	"Daily Mail" : {
 		"icon":"daily_mail.png",
 		"title": [
@@ -6,6 +15,15 @@ var data = {
 		],
 		"links":[
 			"http://www.dailymail.co.uk/indiahome/indianews/article-3259672/It-s-time-leave-Nepal-alone.html"
+		]
+	},
+	"The Diplomat": {
+		"icon":"noicon.png",
+		"title": [
+			"R.I.P., India's Influence in Nepal"
+		],
+		"links": [
+			"http://thediplomat.com/2015/11/r-i-p-indias-influence-in-nepal/"
 		]
 	},
 	"New York Times" : {
@@ -23,6 +41,19 @@ var data = {
 			"http://nytimes.com/2015/11/07/opinion/nepal-china-india-dragon-elephant-blockade.html",
 			"http://kristof.blogs.nytimes.com/2015/10/13/india-dampens-nepals-celebrations",
 			"http://www.nytimes.com/2015/09/29/world/asia/nepal-rations-fuel-as-political-crisis-with-india-worsens.html?_r=0"
+		]
+	},
+	"Nepal Foreign Affairs": {
+		"icon":"noicon.png",
+		"title": [
+			"Nepal can file case at WTO against India’s blockade : Prof Surya Subedi",
+			"Confrontation is fruitless diplomacy between India and Nepal",
+			"Letter to Narendra Modi : stop economic blockade on Nepal"
+		],
+		"links": [
+			"http://nepalforeignaffairs.com/nepal-can-file-case-at-wto-against-indias-blockade-prof-surya-subedi/",
+			"http://nepalforeignaffairs.com/confrontation-is-fruitless-diplomacy-between-india-and-nepal/",
+			"http://nepalforeignaffairs.com/letter-to-narendra-modi-nepal-india-animosity-bolsters-chinas-influence-in-nepal/"
 		]
 	},
 	"DW": {
@@ -47,11 +78,17 @@ var data = {
 		"icon":"the_hindu.png",
 		"title": [
 			"Apply Panchsheel on Nepal",
-			"It's Time to be a good Neighbour"
+			"It's Time to be a good Neighbour",
+			"Losing the story in Nepal",
+			"Making friends, influencing Nepal",
+			"Overcoming the stasis in Nepal"
 		],
 		"links" : [
 			"http://www.thehindu.com/opinion/lead/kanak-mani-dixit-writes-on-nepals-historic-constitution-apply-panchsheel-on-nepal/article7681981.ece",
-			"http://www.thehindu.com/opinion/op-ed/column-by-nirupama-rao-and-atul-pokharel-on-nepal-political-crisis-its-time-to-be-a-good-neighbour/article7770875.ece"
+			"http://www.thehindu.com/opinion/op-ed/column-by-nirupama-rao-and-atul-pokharel-on-nepal-political-crisis-its-time-to-be-a-good-neighbour/article7770875.ece",
+			"http://www.thehindu.com/opinion/columns/losing-the-story-in-nepal/article7933689.ece",
+			"http://www.thehindu.com/opinion/lead/rakesh-sood-writes-making-friends-influencing-nepal/article7689720.ece",
+			"http://www.thehindu.com/opinion/lead/overcoming-the-stasis-in-nepal/article7823808.ece"
 		]
 	},
 	"Scroll": {
@@ -203,6 +240,24 @@ var data = {
 			"http://deccanherald.com/content/506646/indias-costly-policy-failure-nepal.html"
 		]
 	},
+	"DNA": {
+		"icon":"noicon.png",
+		"title": [
+			"Nepal's new Constitution: Is the country at a crossroad?"
+		],
+		"links": [
+			"http://www.dnaindia.com/analysis/standpoint-nepal-s-new-constitution-is-the-country-at-a-crossroad-2131121"
+		]
+	},
+	"Foreign Policy": {
+		"icon":"noicon.png",
+		"title": [
+			"India Pushes Nepal into China’s Arms"
+		],
+		"links": [
+			"http://foreignpolicy.com/2015/10/23/india-pushes-nepal-into-chinas-arms/"
+		]
+	},
 	"The Guardian": {
 		"icon":"guardian.png",
 		"title": [
@@ -284,10 +339,12 @@ var data = {
 	"Tribune India": {
 		"icon":"tribune.png",
 		"title": [
-			"How Nepal was Lost"
+			"How Nepal was Lost",
+			"Why meddle in Nepal?"
 		],
 		"links": [
-			"http://tribuneindia.com/news/comment/how-nepal-was-lost/143371.html"
+			"http://tribuneindia.com/news/comment/how-nepal-was-lost/143371.html",
+			"http://tribuneindia.com/news/comment/why-meddle-in-nepal/159885.html"
 		]
 	},
 	"Turkey Agenda": {
@@ -311,10 +368,12 @@ var data = {
 	"Wall Street Journal": {
 		"icon":"wsj.ico",
 		"title": [
-			"The Two Month Blockade of Nepal explained"
+			"The Two Month Blockade of Nepal explained",
+			"The Struggle for Nepal"
 		],
 		"links" : [
-			"http://blogs.wsj.com/indiarealtime/2015/11/26/the-two-month-blockade-of-nepal-explained/"
+			"http://blogs.wsj.com/indiarealtime/2015/11/26/the-two-month-blockade-of-nepal-explained/",
+			"http://www.wsj.com/articles/the-struggle-for-nepal-1447377158"
 		]
 	},
 	"Washington Post": {

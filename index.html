@@ -12,45 +12,68 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container main">
-        <div class="row">
+<div class="container">
             <div id="header">
                 <h1>India Blockades Nepal</h1>
             </div>
             
-            <div class="row" id="mediaList">
+            <div id="mediaList">
                 <hr>
-                <h5 class="centerAlign">The World is Speaking! <b>#IndiaBlockadesNepal</b> and the World is with Us.</h5>
-                <div id="newsSites"></div>
+                <div>
+                <h5 class="col-md-8">
+                    The World is Speaking! <b>#IndiaBlockadesNepal</b> and the World is with Us.
+                </h5>
+                    <div class="col-md-4">
+                        <input type="search" id="searchAnything" class="form-control input-sm" placeholder="Search News Title or Publishers Name">    
+                    </div>
+                </div>
+                <div id="links" class="row">
+                </div>
             </div>
-        </div>
-    </div>
-    <div id="details" class="container">
-        
     </div>
 </body>
-<script type="text/javascript">
-    function loadContent(e){var t=document.createElement("div")
-t.setAttribute("class","detailCaption")
-var a=document.createElement("button")
-a.setAttribute("class","close"),a.setAttribute("aria-label","Close"),a.onclick=function(e){e.preventDefault(),e.srcElement.parentNode.parentNode.parentNode.style.visibility="hidden"}
-var n=document.createElement("span")
-n.setAttribute("aria-hidden","true"),n.innerHTML="&times;",a.appendChild(n),t.appendChild(a)
-for(var i=document.createElement("ol"),l=0;l<data[e].links.length;l++){var d=document.createElement("li")
-d.innerHTML='<a target="_blank" href="'+data[e].links[l]+'">'+data[e].title[l]+"</a>",i.appendChild(d)}t.appendChild(i),details.innerHTML="",details.appendChild(t),details.style.visibility="visible"}function createNewsProviders(){var e=document.getElementById("newsSites"),t=Object.keys(data).length
-e.innerHTML=""
-for(var a=0;t>a;a++){var n=data[Object.keys(data)[a]],i=document.createElement("div")
-i.setAttribute("class","col-md-1 news")
-var l=document.createElement("img")
-l.src="img/"+n.icon,l.setAttribute("data-toggle","tooltip"),l.setAttribute("data-placement","bottom"),l.setAttribute("data-original-title",Object.keys(data)[a]),i.appendChild(l),i.setAttribute("onclick",'loadContent("'+Object.keys(data)[a]+'")'),e.appendChild(i)}}var newsSection=document.getElementsByClassName("news"),closeDetails=document.getElementsByClassName("close"),details=document.getElementById("details")
-
-
-    createNewsProviders();
-    $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+<script type="text/javascript"> 
+    var t = Object.keys(data).length;
+    
+    for(var i=0;i<t;i++){
+        var n = Object.keys(data)[i];
+        var l = data[n].links.length;
+        
+        for(var o=0;o<l;o++) {
+            var d = document.createElement('div');
+            d.setAttribute('class','col-md-12 elem');
+                 
+            var a = document.createElement('div');
+            a.setAttribute('class','col-md-1');    
+            
+            var m = document.createElement('img');
+            m.setAttribute('class','img pull-right');
+            m.src = "img/" + data[n].icon;
+            m.title = Object.keys(data)[i] 
+            
+            var c = document.createElement('div');
+            c.setAttribute('class','col-md-11 ');
+            c.innerHTML = "<a class='lnks' title ='" + Object.keys(data)[i] + "' href='" + data[n].links[o] + "' target='_blank'>" + data[n].title[o] + "<span>" + Object.keys(data)[i] + "</span></a>";
+            
+            a.appendChild(m);
+            d.appendChild(a);
+            d.appendChild(c);
+            $('#links').appendChild(d);
+        }   
+    }
+       
+   $('#searchAnything').onkeyup=function(e) {
+        var v = this.value.toLowerCase();
+        if(v == '') {
+            $('.elem').show();
+        } else {
+            $('.elem').each(function(){
+                var txt = $(this).find("a").text().toLowerCase();
+                (txt.indexOf(v) >= 0) ? $(this).show() : $(this).hide();
+            })
+        }
+    }
 </script>
 </html>
