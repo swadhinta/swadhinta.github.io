@@ -2,7 +2,7 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 100 !important;
 }
 #links {
-    margin-top: 80px;
+    margin-top: 30px;
     clear: both;
 }
 #links img {
@@ -19,4 +19,34 @@ h1,h2,h3,h4,h5,h6 {
 }
 .lnks span {
     visibility: hidden;
+}
+
+#feature {
+    height: 140px;
+    margin: 40px 0 40px 0;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;  
+    visibility: hidden;
+}
+
+#left {
+    height: 120px;
+    margin-top: 10px;
+}
+#center {
+    border-left: 1px solid #EEE;
+    border-right: 1px solid #EEE;
+    height: 120px;
+    margin-top: 10px;
+}
+#right {
+    height: 120px;
+    margin-top: 10px;
+}
+.image {
+    padding-top: 10px;
+    margin-top:-40px;
+}
+.image img {
+    width: 64px;
 }
